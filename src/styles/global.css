@@ -375,11 +375,18 @@ body.light {
 .ks-project-link:hover { color:var(--gold); }
 
 /* ── Counters ── */
-.ks-counters { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:24px; margin-bottom:60px; }
+.ks-counters {
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:24px;
+  margin-bottom:60px;
+  align-items:stretch;
+}
 .ks-counter-card {
   background:var(--glass); border:1px solid var(--border); border-radius:18px;
-  padding:28px 22px; text-align:center; line-height:1; 
+  padding:28px 22px; text-align:center; line-height:1;
   animation:glow-border 3s ease-in-out infinite; transition:transform 0.3s;
+  height:100%;
 }
 .ks-counter-card:hover { transform:translateY(-6px); }
 .ks-counter-num {
@@ -552,9 +559,13 @@ textarea.ks-input { resize:vertical; min-height:130px; }
   .ks-contact-grid { grid-template-columns:1fr; gap:40px; }
   .ks-nav-links { display:none; }
   .ks-galaxy-wrap { width:300px; height:300px; }
+  .ks-counters { grid-template-columns:repeat(2,minmax(0,1fr)); }
 }
 @media (max-width:600px) {
   .ks-section { padding:70px 5%; }
   .ks-hero-btns { justify-content:center; }
-  .ks-counters { grid-template-columns:repeat(2,1fr); }
+  .ks-counters { grid-template-columns:1fr; gap:18px; }
+  .ks-counter-card { padding:24px 18px; }
+  .ks-counter-num { font-size:2.35rem; }
+  .ks-counter-label { margin-top:14px; letter-spacing:1.6px; }
 }
