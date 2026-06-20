@@ -106,7 +106,7 @@ export const CERTIFICATES = [
 
 export const TIMELINE = [
   { year: "2023", title: "Started BCA at SHUATS University",   desc: "Began my journey in Computer Applications, diving deep into programming fundamentals, DSA, and web basics." },
-  { year: "2023", title: "Joined WIKITECH Club",  desc: "Became an active member of the Developer Student Club, contributing to workshops and community tech events." },
+  { year: "2025", title: "Joined WIKITECH Club",  desc: "Became an active member of the Developer Student Club, contributing to workshops and community tech events." },
   { year: "2025", title: "College Mini Project",  desc: "Built and deployed my first full-stack application CRM — a CLassRoom Management portal that served and managed classesd, exam season, generate Timetables." },
   { year: "2026", title: "CollegeMajor Project", desc: "Built a crop yield prediction system using machine learning and compared multiple regression models to determine the best-performing algorithm. Conducted data analysis, model evaluation, and accuracy comparison to improve prediction reliability." },
 ];
